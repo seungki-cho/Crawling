@@ -5,7 +5,7 @@ public struct Crawling {
     public init() {
         
     }
-    func crawling(_ search:String)->[[String]]{
+    public func crawling(_ search:String)->[[String]]{
         let urlAddr = "http://search.zum.com/search.zum?query=" + search
         guard let url = URL(string: urlAddr) else { return [[""]] }
         var html = String()
